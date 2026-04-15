@@ -432,3 +432,30 @@ header {
 /* ===== CTA SECTION ===== */
 .cta-section {
     background: linear-gradient(135deg, rgba(0, 212, 255
+
+/* ===== RANK BADGE STYLES ===== */
+.rank-badge {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.rank-item:hover .rank-badge {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.rank-badge-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+                                        
