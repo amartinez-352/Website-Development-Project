@@ -1,11 +1,262 @@
-<html>
-   <head>
-     <title>Index Page</title>
-   </head>
-   <body>
-     <h1>Header</h1>
-     <p>Paragraph</p>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rocket League ranking platform - Learn ranks, mechanics, and progression from Bronze to Supersonic Legend">
+    <meta name="keywords" content="Rocket League, ranks, MMR, gaming, competitive, tutorial, guide">
+    <title>Rocket League Rank Guide - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index.html" class="logo">RL Rank Guide</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="ranks.html">Ranks</a></li>
+                    <li><a href="mechanics.html">Mechanics</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master Your Rocket League Journey</h1>
+                <p class="hero-subtitle">Complete rank progression guide from Bronze to Supersonic Legend</p>
+                <div class="hero-buttons">
+                    <a href="ranks.html" class="btn-primary">View All Ranks</a>
+                    <a href="#how-it-works" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/rocket-league-hero.png" alt="Rocket League competitive arena with futuristic vehicles">
+            </div>
+        </section>
+
+        <section class="features" aria-labelledby="features-heading">
+            <h2 id="features-heading">Everything You Need to Rank Up</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-ranks.png" alt="">
+                        <span aria-hidden="true">🏆</span>
+                    </div>
+                    <h3>Complete Rank Breakdown</h3>
+                    <p>Detailed information for all 8 ranks including MMR ranges, estimated hours, and required mechanics for each tier.</p>
+                    <a href="ranks.html" class="feature-link">Explore Ranks →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-mechanics.png" alt="">
+                        <span aria-hidden="true">⚙️</span>
+                    </div>
+                    <h3>Essential Mechanics</h3>
+                    <p>Master half-flips, wave dashes, aerials, and advanced techniques needed to climb the competitive ladder.</p>
+                    <a href="mechanics.html" class="feature-link">Learn Mechanics →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-training.png" alt="">
+                        <span aria-hidden="true">🎮</span>
+                    </div>
+                    <h3>Training Resources</h3>
+                    <p>Proven training packs, drills, and practice routines to improve your gameplay and consistency.</p>
+                    <a href="training.html" class="feature-link">Start Training →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-strategy.png" alt="">
+                        <span aria-hidden="true">📊</span>
+                    </div>
+                    <h3>Game Sense & Strategy</h3>
+                    <p>Learn positioning, rotation, boost management, and decision-making to outsmart your opponents.</p>
+                    <a href="training.html#strategy" class="feature-link">Improve Strategy →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
+            <h2 id="how-heading">How Rocket League Ranking Works</h2>
+            <div class="info-container">
+                <div class="info-text">
+                    <h3>Understanding MMR (Matchmaking Rating)</h3>
+                    <p>Your rank is determined by a hidden number called <strong>MMR</strong>, not just by time played. Here's what you need to know:</p>
+                    <ul>
+                        <li><strong>Win to rank up:</strong> Each win gives you approximately 8-15 MMR</li>
+                        <li><strong>Consistency matters:</strong> Losses subtract similar amounts</li>
+                        <li><strong>Rank thresholds:</strong> Each rank has specific MMR ranges</li>
+                        <li><strong>Divisions:</strong> 3 tiers + 4 divisions per rank (except SSL)</li>
+                    </ul>
+                    <p class="highlight">⚡ Key Insight: Hours don't rank you up—winning consistently does.</p>
+                </div>
+                <div class="info-visual">
+                    <img src="images/mmr-explanation.png" alt="Visual diagram showing how MMR increases with wins and decreases with losses">
+                </div>
+            </div>
+        </section>
+
+        <section class="rank-overview" aria-labelledby="overview-heading">
+            <h2 id="overview-heading">Rank Progression Overview</h2>
+            <div class="rank-timeline">
+                <div class="rank-item bronze">
+                    <img src="images/bronze-badge.png" alt="Bronze rank badge" class="rank-badge">
+                    <h3>Bronze</h3>
+                    <p class="mmr">0-274 MMR</p>
+                    <p class="hours">0-50 hours</p>
+                    <a href="ranks.html#bronze" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item silver">
+                    <img src="images/silver-badge.png" alt="Silver rank badge" class="rank-badge">
+                    <h3>Silver</h3>
+                    <p class="mmr">275-424 MMR</p>
+                    <p class="hours">50-150 hours</p>
+                    <a href="ranks.html#silver" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item gold">
+                    <img src="images/gold-badge.png" alt="Gold rank badge" class="rank-badge">
+                    <h3>Gold</h3>
+                    <p class="mmr">425-574 MMR</p>
+                    <p class="hours">150-300 hours</p>
+                    <a href="ranks.html#gold" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item platinum">
+                    <img src="images/platinum-badge.png" alt="Platinum rank badge" class="rank-badge">
+                    <h3>Platinum</h3>
+                    <p class="mmr">575-814 MMR</p>
+                    <p class="hours">300-600 hours</p>
+                    <a href="ranks.html#platinum" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item diamond">
+                    <img src="images/diamond-badge.png" alt="Diamond rank badge" class="rank-badge">
+                    <h3>Diamond</h3>
+                    <p class="mmr">815-1054 MMR</p>
+                    <p class="hours">600-1000 hours</p>
+                    <a href="ranks.html#diamond" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item champion">
+                    <img src="images/champion-badge.png" alt="Champion rank badge" class="rank-badge">
+                    <h3>Champion</h3>
+                    <p class="mmr">1055-1294 MMR</p>
+                    <p class="hours">1000-2000 hours</p>
+                    <a href="ranks.html#champion" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item gc">
+                    <img src="images/gc-badge.png" alt="Grand Champion rank badge" class="rank-badge">
+                    <h3>Grand Champion</h3>
+                    <p class="mmr">1295-1714 MMR</p>
+                    <p class="hours">2000-4000+ hours</p>
+                    <a href="ranks.html#grand-champion" class="rank-link">Details →</a>
+                </div>
+
+                <div class="rank-item ssl">
+                    <img src="images/ssl-badge.png" alt="Supersonic Legend rank badge" class="rank-badge">
+                    <h3>Supersonic Legend</h3>
+                    <p class="mmr">1715+ MMR</p>
+                    <p class="hours">4000-8000+ hours</p>
+                    <a href="ranks.html#supersonic-legend" class="rank-link">Details →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="cta-content">
+                <h2 id="cta-heading">Ready to Start Your Journey?</h2>
+                <p>Explore detailed breakdowns of every rank, learn essential mechanics, and discover proven strategies to climb the competitive ladder.</p>
+                <div class="cta-buttons">
+                    <a href="ranks.html" class="btn-primary">View Complete Rank Guide</a>
+                    <a href="mechanics.html" class="btn-secondary">Learn Key Mechanics</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-tips" aria-labelledby="tips-heading">
+            <h2 id="tips-heading">Quick Tips for Ranking Up</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>1. Focus on Consistency</h3>
+                    <p>Flashy mechanics won't help if you can't hit the ball reliably. Master the basics first.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>2. Learn Rotation</h3>
+                    <p>Proper positioning and rotation are more important than mechanical skill at most ranks.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>3. Review Replays</h3>
+                    <p>Watch your games to identify mistakes. You can't fix what you don't notice.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>4. Practice Daily</h3>
+                    <p>Even 30 minutes of focused training is better than hours of unfocused gameplay.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>5. Stay Positive</h3>
+                    <p>Every loss is a learning opportunity. Tilt and toxicity will only slow your progress.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>6. Manage Boost</h3>
+                    <p>Don't waste boost. Knowing when to grab small pads vs. full boosts is crucial.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ranks.html">All Ranks</a></li>
+                    <li><a href="mechanics.html">Mechanics Guide</a></li>
+                    <li><a href="training.html">Training Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=MYE6T_gd7H0" target="_blank" rel="noopener noreferrer">Video Tutorial</a></li>
+                    <li><a href="https://www.rocketleague.com" target="_blank" rel="noopener noreferrer">Official Rocket League</a></li>
+                    <li><a href="training.html#packs">Training Packs</a></li>
+                    <li><a href="about.html">About This Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt=""> Twitter</a></li>
+                    <li><a href="#" aria-label="Discord"><img src="images/discord-icon.png" alt=""> Discord</a></li>
+                    <li><a href="#" aria-label="YouTube"><img src="images/youtube-icon.png" alt=""> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Your comprehensive guide to understanding Rocket League ranks and improving your competitive gameplay.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Rocket League Rank Guide. Educational project for SDEV153.</p>
+            <p>Not affiliated with Psyonix or Epic Games.</p>
+        </div>
+    </footer>
+</body>
 </html>
-
-
