@@ -15,4 +15,4 @@ This website serves as a front-end interface for a competitive gaming platform. 
 - **Accessibility Features**: ARIA labels, semantic HTML, keyboard navigation support
 - **Modern UI**: Glassmorphism effects, gradient buttons, and smooth animations
 
-## File Structure
+ https://amartinez-352.github.io/Website-Development-Project/
