@@ -20,6 +20,8 @@
     --champion: #9370db;
     --gc: #dc143c;
     --ssl: #ff00ff;
+    --link-color: #00f7ff; /* NEW: Brighter link color for visibility */
+    --link-visited: #9d7bff; /* NEW: Lighter visited link color */
 }
 
 body {
@@ -28,6 +30,23 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     min-height: 100vh;
+}
+
+/* ===== IMPROVED LINK COLORS (ACCESSIBILITY FIX) ===== */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover,
+a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 /* ===== SKIP LINK (Accessibility) ===== */
@@ -225,6 +244,23 @@ header {
     box-shadow: 0 10px 40px rgba(0, 212, 255, 0.3);
 }
 
+/* ===== HERO SECTION (Alternative for other pages) ===== */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* ===== FEATURES SECTION ===== */
 .features {
     max-width: 1400px;
@@ -277,7 +313,7 @@ header {
 }
 
 .feature-link {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -397,7 +433,14 @@ header {
 .rank-badge {
     width: 80px;
     height: 80px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.rank-item:hover .rank-badge {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .rank-item h3 {
@@ -419,7 +462,7 @@ header {
 }
 
 .rank-link {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
@@ -431,31 +474,19 @@ header {
 
 /* ===== CTA SECTION ===== */
 .cta-section {
-    background: linear-gradient(135deg, rgba(0, 212, 255
-
-/* ===== RANK BADGE STYLES ===== */
-.rank-badge {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 1rem;
-    display: block;
-    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1));
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 4rem 0;
 }
 
-.rank-item:hover .rank-badge {
-    transform: scale(1.1) rotate(5deg);
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
-.rank-badge-placeholder {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-}
-                                        
+.cta-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom
