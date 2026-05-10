@@ -20,8 +20,6 @@
     --champion: #9370db;
     --gc: #dc143c;
     --ssl: #ff00ff;
-    --link-color: #00f7ff; /* NEW: Brighter link color for visibility */
-    --link-visited: #9d7bff; /* NEW: Lighter visited link color */
 }
 
 body {
@@ -32,21 +30,23 @@ body {
     min-height: 100vh;
 }
 
-/* ===== IMPROVED LINK COLORS (ACCESSIBILITY FIX) ===== */
+/* ===== IMPROVED LINK COLORS (HIGH CONTRAST FOR ACCESSIBILITY) ===== */
 a {
-    color: var(--link-color);
+    color: #00f7ff; /* Bright cyan - high contrast */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:visited {
-    color: var(--link-visited);
+    color: #b19dff; /* Light purple - visible on dark bg */
 }
 
 a:hover,
 a:focus {
-    color: var(--secondary-color);
+    color: #ffcc00; /* Bright yellow on hover */
     text-decoration: underline;
+    outline: 2px solid #ffcc00;
+    outline-offset: 2px;
 }
 
 /* ===== SKIP LINK (Accessibility) ===== */
@@ -151,14 +151,14 @@ header {
 .nav-menu a:hover,
 .nav-menu a:focus {
     background: rgba(0, 212, 255, 0.1);
-    color: var(--primary-color);
+    color: #00f7ff;
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
 .nav-menu a.active {
     background: rgba(0, 212, 255, 0.2);
-    color: var(--primary-color);
+    color: #00f7ff;
 }
 
 /* ===== HERO SECTION ===== */
@@ -313,14 +313,14 @@ header {
 }
 
 .feature-link {
-    color: var(--link-color);
+    color: #00f7ff;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .feature-link:hover {
-    color: var(--secondary-color);
+    color: #ffcc00;
     text-decoration: underline;
 }
 
@@ -462,14 +462,14 @@ header {
 }
 
 .rank-link {
-    color: var(--link-color);
+    color: #00f7ff;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
 }
 
 .rank-link:hover {
-    color: var(--secondary-color);
+    color: #ffcc00;
 }
 
 /* ===== CTA SECTION ===== */
@@ -489,4 +489,14 @@ header {
 .cta-content p {
     font-size: 1.2rem;
     color: var(--text-muted);
-    margin-bottom
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== QUICK
